@@ -26,12 +26,16 @@ const config = {
         new CopyPlugin({
             patterns: [
             {
-              from: './src/assets/fonts',
-              to: './assets/fonts'
+                from: './src/assets/fonts',
+                to: './assets/fonts'
             },
             {
-              from: './src/assets/svg',
-              to: './assets/svg'
+                from: './src/assets/svg',
+                to: './assets/svg'
+            },
+            {
+                from: './src/assets/images',
+                to: './assets/images'
             },
             ]})
     ],
