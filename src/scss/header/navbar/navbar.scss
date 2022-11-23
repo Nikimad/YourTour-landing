@@ -1,0 +1,17 @@
+@import './logo';
+@import './nav';
+@import './nav-item';
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-block: 32px;
+}
+
+@media (min-width: 1024px) {
+    .navbar {
+        padding-block: 28px;
+    }
+}

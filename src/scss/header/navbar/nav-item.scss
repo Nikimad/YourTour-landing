@@ -1,0 +1,37 @@
+.nav-item {
+    position: relative;
+    text-decoration: none;
+
+    &::after {
+        position: absolute;
+        bottom: 0;
+
+        display: block;
+        height: 1px;
+        width: 100%; //  TODO animation
+
+        content: '';
+    }
+}
+
+.navbar {
+    &[data-color='black'] {
+        .nav-item{
+            &:hover {
+                &::after {
+                    background-color: #000;
+                }
+            }
+        }
+    }
+
+    &[data-color='white'] {
+        .nav-item{
+            &:hover {
+                &::after {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}

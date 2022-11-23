@@ -1,0 +1,32 @@
+.banner {
+    display: grid;
+    justify-items: center;
+    row-gap: 40px;
+
+    text-align: center;
+
+    padding-block: 52px;
+    
+
+    &__title {
+        width: min-content;
+    }
+
+    &__description {
+        width: 90%;
+        padding-inline: 16px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .banner {
+        row-gap: 50px;
+
+        padding-block: 119px;
+        
+        &__description {
+            width: 45%;
+        }
+    }
+}

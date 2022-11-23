@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url('/src/assets/fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url('/src/assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+.h1 {
+    font-size: 34px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+}
+
+@media (min-width: 1024px) {
+    .h1 {
+        font-size: 96px;
+    }
+}
