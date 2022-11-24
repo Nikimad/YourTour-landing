@@ -1,0 +1,32 @@
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+
+    padding-block: 30px;
+
+    &__list {
+        display: flex;
+        gap: 15px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+
+        gap: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .socials {
+        justify-content: space-between;
+        gap: 25px;
+
+        &__list {
+            gap: 25px;
+        }
+    }
+}

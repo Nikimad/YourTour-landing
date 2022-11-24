@@ -1,0 +1,31 @@
+.bot-line {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: block;
+        height: 1px;
+        
+        background-color: #000;
+
+        content: '';
+    }
+
+    &:hover {
+        &::after {
+            animation: bot-line 0.3s forwards;
+        }
+    }
+}
+
+@keyframes bot-line {
+    from {
+        width: 0%;
+    } to {
+        width: 100%;
+    }
+}

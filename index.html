@@ -14,10 +14,10 @@
                     <use xlink:href="assets/svg/logo.svg#logo"></use>
                 </svg>
                 <nav class="nav d-sm-none">
-                    <a href="#" class="nav-item">Туры</a>
-                    <a href="#" class="nav-item">Создать тур</a>
-                    <a href="#" class="nav-item">Отзывы</a>
-                    <a href="#" class="nav-item">Истории</a>
+                    <a href="#" class="nav-item bot-line">Туры</a>
+                    <a href="#" class="nav-item bot-line">Создать тур</a>
+                    <a href="#" class="nav-item bot-line">Отзывы</a>
+                    <a href="#" class="nav-item bot-line">Истории</a>
                 </nav>
                 <p>+7 999 999 99 99</p>
             </div>
@@ -173,19 +173,33 @@
         </section>
     </main>
     <footer>
-        <p>Наши социальные сети</p>
-        <div>
-            <div>
-                <svg></svg>
-                <p>instagram</p>
-            </div>
-            <div>
-                <svg></svg>
-                <p>facebook</p>
-            </div>
-            <div>
-                <svg></svg>
-                <p>vkontakte</p>
+        <div class="socials container">
+            <p>Наши социальные сети</p>
+            <ul class="list socials__list">
+                <li class="list__item">
+                    <a href="#" class="socials__link">
+                        <svg class="icon" width="14" height="14" viewBox="0 0 14 14">
+                            <use xlink:href="assets/svg/instagram.svg#instagram"></use>
+                        </svg>
+                        <span class="bot-line">instagram</span>
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="socials__link">
+                        <svg class="icon" width="8" height="17" viewBox="0 0 8 17">
+                            <use xlink:href="assets/svg/facebook.svg#facebook"></use>
+                        </svg>
+                        <span class="bot-line">facebook</span>
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="socials__link">
+                        <svg class="icon" width="20" height="12" viewBox="0 0 20 12">
+                            <use xlink:href="assets/svg/vk.svg#vk"></use>
+                        </svg>
+                        <span class="bot-line">vkontakte</span>
+                    </a>
+                </li>
             </div>
         </div>
     </footer>
