@@ -16,8 +16,20 @@
     letter-spacing: 0.02em;
 }
 
+.h3 {
+    font-size: 23px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+}
+
 @media (min-width: 1024px) {
     .h1 {
         font-size: 96px;
     }
+
+    .h3 {
+        font-size: 35px;
+        letter-spacing: 0;
+    }
 }
+

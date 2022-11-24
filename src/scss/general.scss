@@ -10,12 +10,29 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.section {
+    padding-block: 75px;
+}
+
 .list {
     list-style: none;
 }
 
+.border-rad {
+    border-radius: 20px;
+}
+
+
 @media (min-width: 1024px) {
     .body {
         font-size: 20px;
+    }
+
+    .section {
+        padding-block: 135px;
+    }
+
+    .border-rad {
+        border-radius: 50px;
     }
 }

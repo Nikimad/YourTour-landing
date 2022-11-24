@@ -1,0 +1,32 @@
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    text-align: center;
+
+    &__img {
+        width: 130px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+    .cta {
+        text-align: left;
+        grid-auto-flow: column;
+        
+        &__img {
+            width: auto;
+        }
+    }
+}
