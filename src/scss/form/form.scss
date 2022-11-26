@@ -86,12 +86,37 @@
         &::-webkit-calendar-picker-indicator {
             position: absolute;
 
+            z-index: 1;
+
             width: 100%;
             height: 100%;
 
             background: none;
 
             cursor: pointer;
+        }
+
+        &::-webkit-datetime-edit {
+            visibility: hidden;
+        }
+
+        &:valid {
+            &::after {
+                display: none;
+            }
+
+            &::-webkit-datetime-edit {
+                visibility: visible;
+            }
+        }
+
+
+        &::after {
+            position: absolute;
+
+            left: 0.625em;
+
+            content: 'ДД.ММ.ГГГГ';
         }
 
     
@@ -230,6 +255,13 @@
 
         &__textarea {
             height: 9.5rem;
+        }
+
+        &__input[type='date'] {
+    
+            &::after {
+                left: 1em;
+            }
         }
 
         &__radios__wrapper {
