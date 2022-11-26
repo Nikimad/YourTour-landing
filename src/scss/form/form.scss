@@ -75,6 +75,8 @@
     &__input[type='date'] {
         position: relative;
 
+        appearance: none;
+
         text-transform: uppercase;
 
         &:required:invalid {
