@@ -12,6 +12,10 @@
 
 .section {
     padding-block: 75px;
+
+    &__header {
+        text-align: center;
+    }
 }
 
 .list {

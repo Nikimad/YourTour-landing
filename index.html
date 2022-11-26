@@ -28,7 +28,7 @@
             </div>
         </div>
     </header>
-    <main class="container">
+    <main>
         <section class="section">
             <div class="section__header">
                 <h2 class="h2 section-title">Выбери свой тур</h2>
@@ -74,13 +74,75 @@
             </div>
         </section>
         <section class="section">
-            <div class="section__header">
-                <h2 class="h2 section-title">Собери свой тур</h2>
-                <p class="section-description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="h2 section-title">Собери свой тур</h2>
+                    <p class="section-description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+                </div>
+                <form class="form" action="">
+                        <label for="name" class="form__label">
+                            Имя
+                            <input class="form__input" name="name" type="text" id="name" placeholder="Введите ваше имя" required>
+                        </label>
+                        <label for="direction" class="form__label">
+                            Направление
+                            <select class="form__select" name="direction" id="direction" required>
+                                <option value="" class="form__option_disabled" disabled selected>Куда хотите ехать</option>
+                                <option class="form__option" value="china">Китай</option>
+                                <option class="form__option" value="turkey">Турция</option>
+                                <option class="form__option" value="brasil">Бразилия</option>
+                                <option class="form__option" value="belgium">Бельгия</option>
+                                <option class="form__option" value="georgia">Грузия</option>
+                            </select>
+                        </label>
+                        <label for="email" class="form__label">
+                            Email
+                            <input class="form__input" name="email" type="email" id="email" placeholder="example@mail.com" required>
+                        </label>
+                        <label for="tel" class="form__label">
+                            Телефон
+                            <input class="form__input" name="tel" type="tel" id="tel" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
+                        </label>
+                        <label for="fromDate" class="form__label">
+                            Дата от
+                            <input class="form__input" name="fromDate" type="date" id="fromDate" required>
+                        </label>
+                        <label for="toDate" class="form__label">
+                            Дата до
+                            <input class="form__input" name="toDate" type="date" id="toDate" required>
+                        </label>
+                        <label for="comment" class="form__label form__label__comment">
+                            Комментарий
+                            <textarea class="form__textarea" name="comment" id="comment"></textarea>
+                        </label>
+                        <div class="form__label form__radios">
+                            Вам есть 18 лет?
+                            <div class="form__radios__wrapper">
+                                <label for="ageValid" class="form__radio__label">
+                                    <input class="form__radio" name="age" type="radio" id="ageValid">
+                                    <span class="form__radio__pseudo"><span class="bullet"></span></span>Да
+                                </label>
+                                <label for="ageInvalid" class="form__radio__label">
+                                    <input class="form__radio" name="age" type="radio" id="ageInvalid">
+                                    <span class="form__radio__pseudo"><span class="bullet"></span></span>Нет
+                                </label>
+                            </div>
+                        </div>
+                        <label for="license" class="form__label__license">
+                            <input name="license" type="checkbox" id="license" class="form__checkbox" required>
+                            <span class="form__checkbox__pseudo"><span class="mark"></span></span>
+                            <span class="form__license">Нажимая кнопку, я принимаю условия <a class="form__license__link" href="#">Лицензионного договора</a></span>
+                        </label>
+                        <div class="form__buttons">
+                            <label for="submit">
+                                <input class="button button__simp button__simp_green" name="submit" type="submit" value="Найти тур">
+                            </label>
+                            <label for="reset">
+                                <input class="button button__simp button__simp_lightgreen" name="reset" type="reset">
+                            </label>
+                        </div>
+                </form>
             </div>
-            <form action="">
-                Форма
-            </form>
         </section>
         <section class="section">
             <div class="section__header">
