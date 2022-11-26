@@ -1,0 +1,32 @@
+.form {
+    &__select {
+        appearance: none;
+
+        background-image: url('/src/assets/svg/select.svg');
+        background-repeat: no-repeat;
+        background-position: center right 0.625em;
+
+        cursor: pointer;
+
+        &:invalid {
+            color: $gray-300;
+        }
+
+    }
+
+    &__option {
+        color: $black;
+
+        &_disabled {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: $bp-medium) {
+    .form {
+        &__select {
+            background-position: center right 1em;
+        }
+    }
+}

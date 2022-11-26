@@ -1,0 +1,70 @@
+.form {
+    &__label__license {
+        display: flex;
+
+        gap: 0.625em;
+    }
+
+    &__license {
+        color: $gray-300;
+
+        &__link {
+            color: $black;
+        }
+    }
+
+    &__checkbox {
+        display: none;
+
+        &__pseudo {
+            flex-shrink: 0;
+            display: block;
+            
+            width: 1.25em;
+            height: 1.25em;
+
+            border: 2px solid $black;
+            border-radius: 5px;
+
+            cursor: pointer;
+            .mark {
+                display: none;
+
+                height: 100%;
+
+                background-image: url('/src/assets/svg/mark.svg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 9px 9px;
+            }
+        }
+
+        &:checked {
+            & + .form__checkbox__pseudo {
+                .mark {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $bp-medium) {
+    .form {
+        &__label__license {
+            gap: calc(0.5em + 1px);
+        }
+    
+        &__checkbox {
+    
+            &__pseudo {
+                width: 1.3em;
+                height: 1.3em;
+    
+                .mark {
+                    background-size: 12px 12px;
+                }
+            }
+        }
+    }
+}

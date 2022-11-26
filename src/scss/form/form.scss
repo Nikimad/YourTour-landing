@@ -1,3 +1,8 @@
+@import './_select';
+@import './_inputDate';
+@import './_radio';
+@import './_checkbox';
+
 .form {
     display: grid;
 
@@ -10,16 +15,6 @@
     &__label {
         display: grid;
         gap: 0.5em;
-
-        &:hover {
-            .form {
-                &__input, 
-                &__select,
-                &__textarea {
-                    background-color: $beige-200;
-                }
-            }
-        }
     }
 
     &__input,
@@ -30,6 +25,9 @@
         width: 100%;
 
         background-color: $beige-100;
+
+        outline: none;
+
         border: 1px solid $beige-200;
         border-radius: 0.625em;
 
@@ -41,28 +39,14 @@
         &::placeholder {
             color: $gray-300;
         }
-    }
 
-    &__select {
-        appearance: none;
-
-        background-image: url('/src/assets/svg/select.svg');
-        background-repeat: no-repeat;
-        background-position: center right 0.625em;
-
-        cursor: pointer;
-
-        &:invalid {
-            color: $gray-300;
+        &:hover,
+        &:focus {
+            background-color: $beige-200;
         }
 
-    }
-
-    &__option {
-        color: $black;
-
-        &_disabled {
-            display: none;
+        &:focus {
+            border-color: $gray-300;
         }
     }
 
@@ -70,155 +54,6 @@
         resize: none;
 
         height: 8.25em;
-    }
-
-    &__input[type='date'] {
-        position: relative;
-
-        appearance: none;
-
-        text-transform: uppercase;
-
-        &:required:invalid {
-            color: $gray-300;
-        }
-
-        &::-webkit-calendar-picker-indicator {
-            position: absolute;
-
-            z-index: 1;
-
-            width: 100%;
-            height: 100%;
-
-            background: none;
-
-            cursor: pointer;
-        }
-
-        &::-webkit-datetime-edit {
-            visibility: hidden;
-        }
-
-        &:valid {
-            &::after {
-                display: none;
-            }
-
-            &::-webkit-datetime-edit {
-                visibility: visible;
-            }
-        }
-
-
-        &::after {
-            position: absolute;
-
-            left: 0.625em;
-
-            content: 'ДД.ММ.ГГГГ';
-        }
-
-    
-    }
-
-    &__radios__wrapper {
-        display: flex;
-
-        gap: 1.875em;
-    }
-
-    &__label__license {
-        display: flex;
-
-        gap: 0.625em;
-    }
-
-    &__license {
-        color: $gray-300;
-
-        &__link {
-            color: $black;
-        }
-    }
-
-    &__checkbox {
-        display: none;
-
-        &__pseudo {
-            flex-shrink: 0;
-            display: block;
-            
-            width: 1.25em;
-            height: 1.25em;
-
-            border: 2px solid $black;
-            border-radius: 5px;
-
-            cursor: pointer;
-            .mark {
-                display: none;
-
-                height: 100%;
-
-                background-image: url('/src/assets/svg/mark.svg');
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-size: 9px 9px;
-            }
-        }
-
-        &:checked {
-            & + .form__checkbox__pseudo {
-                .mark {
-                    display: block;
-                }
-            }
-        }
-    }
-
-    &__radio {
-        display: none;
-
-        &__label {
-            display: flex;
-
-            gap: 0.625em;
-
-            cursor: pointer;
-        }
-
-        &__pseudo {
-            display: flex;
-
-            justify-content: center;
-            align-items: center;
-
-            width: 1.25em;
-            height: 1.25em;
-
-            border: 2px solid $black;
-            border-radius: 100%;
-
-            .bullet {
-                display: none;
-
-                width: 0.625em;
-                height: 0.625em;
-
-                background-color: $black;
-
-                border-radius: 100%;
-            }
-        }
-
-        &:checked {
-            & + .form__radio__pseudo {
-                .bullet {
-                    display: block;
-                }
-            }
-        }
     }
 
     &__buttons {
@@ -249,56 +84,8 @@
             padding: 1em;    
         }
 
-        &__select {
-            background-position: center right 1em;
-        }
-
         &__textarea {
             height: 9.5rem;
-        }
-
-        &__input[type='date'] {
-    
-            &::after {
-                left: 1em;
-            }
-        }
-
-        &__radios__wrapper {
-            gap: calc(1.5em + 1px);
-        }
-
-        &__label__license {
-            gap: calc(0.5em + 1px);
-        }
-    
-        &__checkbox {
-    
-            &__pseudo {
-                width: 1.3em;
-                height: 1.3em;
-    
-                .mark {
-                    background-size: 12px 12px;
-                }
-            }
-        }
-
-        &__radio {
-
-            &__label {
-                gap: calc(0.5em + 1px);
-            }
-
-            &__pseudo {
-                width: 1.3em;
-                height: 1.3em;
-    
-                .bullet {
-                    width: 0.6em;
-                    height: 0.6em;
-                }
-            }
         }
 
         &__buttons {
