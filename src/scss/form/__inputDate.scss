@@ -25,6 +25,8 @@
 
         &:invalid {
             &::after {
+                position: relative
+                ;
                 display: block;
 
                 content: 'ДД.ММ.ГГГГ';
