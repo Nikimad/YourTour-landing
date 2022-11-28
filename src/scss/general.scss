@@ -8,18 +8,31 @@
     line-height: 1.45;
 
     font-family: 'Roboto', sans-serif;
+
+    background-color: $beige-100;
 }
 
 .section {
     padding-block: 75px;
 
     &__header {
+        display: grid;
+        justify-items: center;
+        gap: 1.25em;
+        
         text-align: center;
+    }
+
+    &__title {
+        width: fit-content;
     }
 }
 
 .list {
     list-style: none;
+
+    padding: 0;
+    margin: 0;
 }
 
 .border-rad {
@@ -34,6 +47,10 @@
     display: block;
 }
 
+.d-s-flex {
+    display: flex;
+}
+
 
 @media (min-width: $bp-medium) {
     .body {
@@ -42,6 +59,10 @@
 
     .section {
         padding-block: 135px;
+
+        &__header {
+            gap: 1.5em;
+        }
     }
 
     .border-rad {
@@ -55,6 +76,10 @@
     .d-m-block {
         display: block;
     }
+    
+    .d-m-flex {
+        display: flex;
+    }
 }
 
 @media (min-width: $bp-big) {
@@ -64,5 +89,9 @@
 
     .d-l-block {
         display: block;
+    }
+    
+    .d-l-flex {
+        display: flex;
     }
 }

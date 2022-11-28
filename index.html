@@ -14,10 +14,10 @@
                     <use xlink:href="assets/svg/logo.svg#logo"></use>
                 </svg>
                 <nav class="nav d-s-none">
-                    <a href="#" class="nav-item bot-line">Туры</a>
-                    <a href="#" class="nav-item bot-line">Создать тур</a>
-                    <a href="#" class="nav-item bot-line">Отзывы</a>
-                    <a href="#" class="nav-item bot-line">Истории</a>
+                    <a href="#" class="nav-item bot-line bot-line_black">Туры</a>
+                    <a href="#" class="nav-item bot-line bot-line_black">Создать тур</a>
+                    <a href="#" class="nav-item bot-line bot-line_black">Отзывы</a>
+                    <a href="#" class="nav-item bot-line bot-line_black">Истории</a>
                 </nav>
                 <p>+7 999 999 99 99</p>
             </div>
@@ -31,7 +31,7 @@
     <main>
         <section class="section">
             <div class="section__header">
-                <h2 class="h2 section-title">Выбери свой тур</h2>
+                <h2 class="h2 section__title">Выбери свой тур</h2>
                 <ul class="list">
                     <li>Популярные</li>
                     <li>Авторские</li>
@@ -76,8 +76,8 @@
         <section class="section">
             <div class="container">
                 <div class="section__header">
-                    <h2 class="h2 section-title">Собери свой тур</h2>
-                    <p class="section-description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+                    <h2 class="h2 section__title">Собери свой тур</h2>
+                    <p class="section__description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
                 </div>
                 <form class="form" action="">
                         <label for="name" class="form__label">
@@ -147,8 +147,8 @@
         <section class="section">
             <div class="container">
                 <div class="section__header">
-                    <h2 class="h2 section-title">Отзывы наших путешественников</h2>
-                    <p class="section-description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+                    <h2 class="h2 section__title">Отзывы наших путешественников</h2>
+                    <p class="section__description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
                 </div>
                 <div class="reviews">
                     <div class="review border-rad">
@@ -192,8 +192,8 @@
         </section>
         <section class="section">
             <div class="section__header">
-                <h2 class="h2 section-title">Фотографии путешествий</h2>
-                <p class="section-description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+                <h2 class="h2 section__title">Фотографии путешествий</h2>
+                <p class="section__description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
             </div>
             <div class="gallery">
                 <div class="gallery__row">
@@ -218,34 +218,60 @@
             </div>
         </section>
         <section class="section">
-            <div class="section__header">
-                <h2 class="h2 section-title">Истории путешествий</h2>
-                <p class="section-description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-            </div>
-            <div>
-                <div>
-                    <h3>Автостопом в Стамбул</h3>
-                    <p>Идейные соображения высшего порядка, а также рамки и место обучения
-                        кадров обеспечивает широкому кругу (специалистов) участие в формировании
-                        новых предложений.
-                    </p>
-                    <button>Подробнее</div>
-                    </button>
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="h2 section__title">Истории путешествий</h2>
+                    <p class="section__description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
                 </div>
-                <div>
-                    <h3>Автостопом в Стамбул</h3>
-                    <p>Идейные соображения высшего порядка, а также рамки и место обучения
-                        кадров обеспечивает широкому кругу (специалистов) участие в формировании
-                        новых предложений.</p>
-                    <button>Подробнее</div>
-                    </button>
-                </div>
-                <div>
-                    <h3>Автостопом в Стамбул</h3>
-                    <p>Идейные соображения высшего порядка, а также рамки и место обучения
-                        кадров обеспечивает широкому кругу (специалистов) участие в формировании
-                        новых предложений.</p>
-                    <button>Подробнее</button>
+                <div class="stories">
+                    <div class="story border-rad">
+                        <h3>Автостопом в Стамбул</h3>
+                        <p class="story__description">Идейные соображения высшего порядка, а также рамки и место обучения
+                            кадров обеспечивает широкому кругу (специалистов) участие в формировании
+                            новых предложений.
+                        </p>
+                        <ul class="story__list">
+                            <li>вкусная еда</li>
+                            <li>дешёвый транспорт</li>
+                            <li>красивый город</li>
+                        </ul>
+                        <div class="story__interact">
+                            <button class="button button__details">Подробнее</button>
+                            <ul class="list socials__list">
+                                <li class="story__socials__item"><a class="bot-line bot-line_white d-s-none d-m-flex" href="#">instagram</a></li>
+                                <li class="story__socials__item"><a class="bot-line bot-line_white d-s-none d-m-flex" href="#">facebook</a></li>
+                                <li class="story__socials__item"><a class="bot-line bot-line_white d-s-none d-m-flex" href="#">YouYube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="story border-rad">
+                        <h3>Автостопом в Стамбул</h3>
+                        <p class="story__description">Идейные соображения высшего порядка, а также рамки и место обучения
+                            кадров обеспечивает широкому кругу (специалистов) участие в формировании
+                            новых предложений.</p>
+                        <div class="story__interact">
+                            <button class="button button__details">Подробнее</button>
+                            <ul class="list socials__list">
+                                <li class="story__socials__item"><a class="bot-line bot-line_white d-s-none d-m-flex" href="#">instagram</a></li>
+                                <li class="story__socials__item"><a class="bot-line bot-line_white d-s-none d-m-flex" href="#">ВКонтакте</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="story border-rad">
+                        <h3>Автостопом в Стамбул</h3>
+                        <p class="story__description">Идейные соображения высшего порядка, а также рамки и место обучения
+                            кадров обеспечивает широкому кругу (специалистов) участие в формировании
+                            новых предложений.
+                        </p>
+                        <div class="story__interact">
+                            <button class="button button__details">Подробнее</button>
+                            <ul class="list socials__list">
+                                <li class="story__socials__item"><a class="bot-line bot-line_white d-s-none d-m-flex" href="#">instagram</a></li>
+                                <li class="story__socials__item"><a class="bot-line bot-line_white d-s-none d-m-flex" href="#">facebook</a></li>
+                                <li class="story__socials__item"><a class="bot-line bot-line_white d-s-none d-m-flex" href="#">ВКонтакте</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -254,7 +280,7 @@
                 <img class="cta__img border-rad" src="assets/images/cta.jpg" alt="">
                 <div class="cta__body">
                     <h3 class="h3 cta__title">Пора в путешествие<br>вместе с нами!</h3>
-                    <p class="cta__description">Напиши на почту и узнай подробности<br>на <a class="bot-line" href="#">yourtour@gmail.com</a></p>
+                    <p class="cta__description">Напиши на почту и узнай подробности<br>на <a class="bot-line bot-line_black" href="#">yourtour@gmail.com</a></p>
                 </div>
             </div>
         </section>
@@ -268,7 +294,7 @@
                         <svg class="icon" width="14" height="14" viewBox="0 0 14 14">
                             <use xlink:href="assets/svg/instagram.svg#instagram"></use>
                         </svg>
-                        <span class="bot-line">instagram</span>
+                        <span class="bot-line bot-line_black">instagram</span>
                     </a>
                 </li>
                 <li class="list__item">
@@ -276,7 +302,7 @@
                         <svg class="icon" width="8" height="17" viewBox="0 0 8 17">
                             <use xlink:href="assets/svg/facebook.svg#facebook"></use>
                         </svg>
-                        <span class="bot-line">facebook</span>
+                        <span class="bot-line bot-line_black">facebook</span>
                     </a>
                 </li>
                 <li class="list__item">
@@ -284,7 +310,7 @@
                         <svg class="icon" width="20" height="12" viewBox="0 0 20 12">
                             <use xlink:href="assets/svg/vk.svg#vk"></use>
                         </svg>
-                        <span class="bot-line">vkontakte</span>
+                        <span class="bot-line bot-line_black">vkontakte</span>
                     </a>
                 </li>
             </div>
