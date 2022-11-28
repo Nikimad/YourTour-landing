@@ -1,0 +1,53 @@
+.gallery {
+    display: grid;
+    justify-items: center;
+    gap: 1.125em;
+
+    padding: calc(1.25em + 1px);
+
+    &__row {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        gap: 0.625em;
+
+        height: 110px;
+
+        width: min(1920px, 100%);
+    }
+
+
+    &__photo {
+        width: 100%;
+        height: inherit;
+
+        object-fit: cover;
+    }
+}
+
+@media (min-width: $bp-medium) {
+    .gallery {
+        row-gap: 1.5em;
+        column-gap: 1em;
+
+        padding: 1em;
+
+        &__row {
+            height: 310px;
+
+            gap: 1em;
+        }
+    }
+}
+
+@media (min-width: $bp-big) {
+    .gallery {
+        row-gap: calc(1.5em + 3px);
+
+        &__row {
+            gap: 1.5em;
+        }
+
+        padding: 1.5em;
+    }
+}

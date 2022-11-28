@@ -26,8 +26,16 @@
     border-radius: 20px;
 }
 
+.d-s-none {
+    display: none;
+}
 
-@media (min-width: 1024px) {
+.d-s-block {
+    display: block;
+}
+
+
+@media (min-width: $bp-medium) {
     .body {
         font-size: 20px;
     }
@@ -38,5 +46,23 @@
 
     .border-rad {
         border-radius: 50px;
+    }
+
+    .d-m-none {
+        display: none;
+    }
+
+    .d-m-block {
+        display: block;
+    }
+}
+
+@media (min-width: $bp-big) {
+    .d-l-none {
+        display: none;
+    }
+
+    .d-l-block {
+        display: block;
     }
 }
