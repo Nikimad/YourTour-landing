@@ -27,6 +27,7 @@
             border-radius: 5px;
 
             cursor: pointer;
+
             .mark {
                 display: none;
 
@@ -36,6 +37,8 @@
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: 9px 9px;
+
+                transition: 0;
             }
         }
 

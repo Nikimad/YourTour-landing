@@ -13,7 +13,7 @@
 }
 
 .section {
-    padding-block: 75px;
+    margin-block: 75px;
 
     &__header {
         display: grid;
@@ -58,7 +58,7 @@
     }
 
     .section {
-        padding-block: 135px;
+        margin-block: 135px;
 
         &__header {
             gap: 1.5em;

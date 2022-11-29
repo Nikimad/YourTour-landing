@@ -1,9 +1,11 @@
 .gallery {
-    display: grid;
-    justify-items: center;
-    gap: 1.125em;
+    &__list {
+        display: grid;
+        justify-items: center;
+        gap: 1.125em;
 
-    padding: calc(1.25em + 1px);
+        padding: calc(1.25em + 1px);
+    }
 
     &__row {
         display: grid;
@@ -16,7 +18,6 @@
         width: min(1920px, 100%);
     }
 
-
     &__photo {
         width: 100%;
         height: inherit;
@@ -27,10 +28,12 @@
 
 @media (min-width: $bp-medium) {
     .gallery {
-        row-gap: 1.5em;
-        column-gap: 1em;
+        &__list {
+            row-gap: 1.5em;
+            column-gap: 1em;
 
-        padding: 1em;
+            padding: 1em;
+        }
 
         &__row {
             height: 310px;
@@ -42,12 +45,14 @@
 
 @media (min-width: $bp-big) {
     .gallery {
-        row-gap: calc(1.5em + 3px);
+        padding: 1.5em;
+        
+        &__list {
+            row-gap: calc(1.5em + 3px);
+        }
 
         &__row {
             gap: 1.5em;
         }
-
-        padding: 1.5em;
     }
 }

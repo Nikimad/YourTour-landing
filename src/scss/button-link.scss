@@ -1,101 +1,88 @@
-.button {
-    &__link {
-        display: grid;
-        align-content: space-between;
+.button__card {
+    display: grid;
+    align-content: space-between;
 
+    position: relative;
+
+    overflow: hidden;
+
+    @extend .border-rad;
+
+    cursor: pointer;
+
+    &__header {
+        display: grid;
+
+        text-align: left;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link {
         position: relative;
 
-        overflow: hidden;
+        left: calc(-1em + 3px);
+        bottom: -0.5rem;
 
-        &__header {
-            display: grid;
+        @extend .p-big;
 
-            text-align: left;
-        }
+        display: flex;
+        align-items: center;
+        gap: 15px;
 
-        &__footer {
-            display: flex;
-            justify-content: space-between;
-        }
+        border-radius: 3.125rem;
 
-        &__interact {
-            position: relative;
-
-            left: -20px;
-
-            font-size: 1rem;
-            line-height: 23px;
-
-            display: flex;
-            align-items: center;
-            gap: 15px;
-
-            font-weight: 700;
-
-            border-radius: 50px;
-
-            padding: 7px 20px;
-
-            &::after {
-                position: relative;
-    
-                content: '';
-    
-                width: 24px;
-                height: 26px;
-    
-                background-image: url('/src/assets/svg/arrow.svg');
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center center;
-            }
-        }
+        padding: 0.5rem calc(1em - 3px);
 
         &::after {
-            position: absolute;
-
-            top: 0;
-            left: 0;
-
-            z-index: -1;
-
-            width: 100%;
-            height: 100%;
-
+            position: relative;
+    
             content: '';
-
+    
+            width: 24px;
+            height: 26px;
+    
+            background-image: url('/src/assets/svg/arrow.svg');
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
             background-position: center center;
-
-            transition: 0.3s ease;
         }
     }
-}
 
-.button {
-    &__link {
-        &:hover::after {
-            transform: scale(1.2);
+    &::after {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        z-index: -1;
+
+        width: 100%;
+        height: 100%;
+
+        content: '';
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        transition: 0.3s ease;
         }
+    }
 
-        &:hover &__interact {
-            background-color: $green-400;
-        }
+.button__card {
+    &:hover::after {
+        transform: scale(1.2);
+    }
 
-        &:active &__interact {
+    &:hover &__link {
+        background-color: $green-400;
+
+        &:active {
             background-color: $orange-200;
-        }
-    }
-}
-
-@media (min-width: $bp-medium) {
-    .button {
-        &__link {
-            &__interact {
-                font-size: 23px;
-                line-height: 28px;
-            }
         }
     }
 }
