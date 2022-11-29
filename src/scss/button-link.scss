@@ -1,0 +1,101 @@
+.button {
+    &__link {
+        display: grid;
+        align-content: space-between;
+
+        position: relative;
+
+        overflow: hidden;
+
+        &__header {
+            display: grid;
+
+            text-align: left;
+        }
+
+        &__footer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__interact {
+            position: relative;
+
+            left: -20px;
+
+            font-size: 1rem;
+            line-height: 23px;
+
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            font-weight: 700;
+
+            border-radius: 50px;
+
+            padding: 7px 20px;
+
+            &::after {
+                position: relative;
+    
+                content: '';
+    
+                width: 24px;
+                height: 26px;
+    
+                background-image: url('/src/assets/svg/arrow.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
+            }
+        }
+
+        &::after {
+            position: absolute;
+
+            top: 0;
+            left: 0;
+
+            z-index: -1;
+
+            width: 100%;
+            height: 100%;
+
+            content: '';
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+
+            transition: 0.3s ease;
+        }
+    }
+}
+
+.button {
+    &__link {
+        &:hover::after {
+            transform: scale(1.2);
+        }
+
+        &:hover &__interact {
+            background-color: $green-400;
+        }
+
+        &:active &__interact {
+            background-color: $orange-200;
+        }
+    }
+}
+
+@media (min-width: $bp-medium) {
+    .button {
+        &__link {
+            &__interact {
+                font-size: 23px;
+                line-height: 28px;
+            }
+        }
+    }
+}

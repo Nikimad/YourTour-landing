@@ -1,0 +1,68 @@
+.tours {
+    &__list {
+        display: grid;
+        justify-content: center;
+        gap: 1.125rem;
+
+        &__item {
+            &:nth-child(1)::after {
+                background-image: $grad, url('/src/assets/images/card-1.jpg');
+            }
+            &:nth-child(2)::after {
+                background-image: $grad, url('/src/assets/images/card-2.jpg');
+            }
+            &:nth-child(3)::after {
+                background-image: $grad, url('/src/assets/images/card-3.jpg');
+            }
+            &:nth-child(4)::after {
+                background-image: $grad, url('/src/assets/images/card-4.jpg');
+            }
+            &:nth-child(5)::after {
+                background-image: $grad, url('/src/assets/images/card-5.jpg');
+            }
+            &:nth-child(6)::after {
+                background-image: $grad, url('/src/assets/images/card-6.jpg');
+            }
+        }
+    }
+}
+
+
+.tour {
+    height: 318px;
+
+    color: $white;
+
+    padding: 25px;
+    
+    &__header {
+        gap: 13px;
+    }
+}
+
+@media (min-width: $bp-medium) {
+    .tours {
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    .tour {
+        height: 531px;
+
+        padding: 50px;
+
+        &__header {
+            gap: 16px;
+        }
+    }
+}
+
+@media (min-width: $bp-big) {
+    .tours {
+        &__list {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5em;
+        }
+    }
+}
