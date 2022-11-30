@@ -2,19 +2,25 @@
 @import './_author';
 
 .reviews {
-    display: grid;
+    &__list {
+        display: grid;
 
-    gap: 1.125rem;
+        gap: 1.125rem;
+    }
 }
 
 @media (min-width: $bp-medium) {
     .reviews {
-        grid-template-columns: 1fr 1fr;
+        &__list {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 }
 
 @media (min-width: $bp-big) {
     .reviews {
-        gap: 1.5em;
+        &__list {
+            gap: 1.5em;
+        }
     }
 }
