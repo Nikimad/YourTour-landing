@@ -1,0 +1,15 @@
+.author {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__info {
+        display: grid;
+        grid-auto-rows: min-content;
+        row-gap: 0.5rem;
+    }
+
+    &__avatar {
+        border-radius: 100px;
+    }
+}

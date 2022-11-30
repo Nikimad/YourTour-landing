@@ -1,0 +1,20 @@
+@import './review';
+@import './_author';
+
+.reviews {
+    display: grid;
+
+    gap: 1.125rem;
+}
+
+@media (min-width: $bp-medium) {
+    .reviews {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: $bp-big) {
+    .reviews {
+        gap: 1.5em;
+    }
+}

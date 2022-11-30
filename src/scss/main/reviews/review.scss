@@ -1,0 +1,29 @@
+.review {
+    display: grid;
+    align-content: space-between;
+    gap: 2.5em;
+
+    background-color: $beige-200;
+
+    padding: 1.25em;
+
+    &__text {
+        & > :not(:last-child) {
+            margin-bottom: 23px;
+        }
+    }
+}
+
+@media (min-width: $bp-medium) {
+    .review {
+        gap: 3.5em;
+
+        padding: 2em;
+
+        &__text {
+            & > :not(:last-child) {
+                margin-bottom: 28px;
+            }
+        }
+    }
+}
