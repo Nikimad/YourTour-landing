@@ -1,16 +1,11 @@
-.nav {
-    display: none;
-}
-
-@media (min-width: 1024px) {
+@media (min-width: $bp-medium) {
     .nav {
-        display: flex;
-        gap: 30px;
+        gap: 1.5em;
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: $bp-big) {
     .nav {
-        gap: 50px;
+        gap: 2.5em;
     }
 }
