@@ -1,0 +1,54 @@
+.story {
+    height: 455px;
+
+    color: $white;
+
+    padding: 1.875em;
+
+    &__header {
+        gap: 1.25em;
+
+        max-width: 29em;
+
+        .heading {
+            width: min-content;
+        }
+    }
+
+    &__list {
+        list-style-type: disc;
+
+        padding-left: 1.5em;
+    }
+
+    &::after {
+        @extend .bg;
+    }
+
+    &__socials__list {
+        display: flex;
+        gap: 35px;
+    }
+
+}
+
+@media (min-width: $bp-medium) {
+    .story {
+        height: 567px;
+
+        padding: 3em;
+
+        &__header {
+            gap: 1.85em;
+
+            .heading {
+                width: 100%;
+            }
+        }
+
+        &__list {
+            margin-top: -0.5em;
+        }
+    
+    }
+}

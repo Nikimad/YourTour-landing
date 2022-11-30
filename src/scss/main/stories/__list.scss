@@ -17,33 +17,10 @@
     }
 }
 
-.story {
-    height: 455px;
-
-    color: $white;
-
-    padding: 30px;
-
-    &__header {
-        gap: 20px;
-
-        max-width: 29em;
-    }
-
-}
-
 @media (min-width: $bp-medium) {
     .stories {
         &__list {
             gap: 2.5em;
         }
-    }
-
-    .story {
-        gap: 37px;
-
-        height: 567px;
-
-        padding: 3em;
     }
 }

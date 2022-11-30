@@ -1,9 +1,34 @@
 .section {
     margin-block: 75px;
+
+    &__header {
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+        gap: 1.25em;
+
+        text-align: center;
+
+        margin-bottom: 3.125em;
+
+        & > .p {
+            max-width: 100%;
+        }
+    }
 }
 
 @media (min-width: $bp-medium) {
     .section {
         margin-block: 135px;
+
+        &__header {
+            gap: 1.5em;
+
+            margin-bottom: 5em;
+
+            & > .p {
+                max-width: 60%;
+            }
+        }
     }
 }

@@ -21,16 +21,20 @@
 
         position: relative;
 
-        left: calc(-1em + 3px);
         bottom: -0.5rem;
     }
 
     &__link {
         position: relative;
 
+        left: calc(-1em + 3px);
+
         @extend .p_big;
 
-        // @extend .d-flex-center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
         gap: 15px;
 
         border-radius: 3.125rem;
@@ -44,6 +48,8 @@
     
             width: 24px;
             height: 26px;
+
+            @extend .bg;
     
             background-image: url('/src/assets/svg/arrow.svg');
             background-size: contain;

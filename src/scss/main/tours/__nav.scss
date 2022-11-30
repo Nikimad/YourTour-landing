@@ -1,0 +1,20 @@
+.tours {
+    &__nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.625em;
+
+        margin-top: 0.625em;
+    }
+}
+
+@media (min-width: $bp-medium) {
+    .tours {
+        &__nav {
+            gap: 1.5em;
+
+            margin-top: 0.4em 0;
+        }
+    }
+}

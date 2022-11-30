@@ -1,0 +1,27 @@
+.tour {
+    color: $white;
+
+    height: 318px;
+
+    padding: 25px;
+    
+    &__header {
+        gap: 13px;
+    }
+
+    &::after {
+        @extend .bg;
+    }
+}
+
+@media (min-width: $bp-medium) {
+    .tour {
+        height: 531px;
+
+        padding: 50px;
+
+        &__header {
+            gap: 16px;
+        }
+    }
+}
