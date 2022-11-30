@@ -1,0 +1,9 @@
+.section {
+    margin-block: 75px;
+}
+
+@media (min-width: $bp-medium) {
+    .section {
+        margin-block: 135px;
+    }
+}

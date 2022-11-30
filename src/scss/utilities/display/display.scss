@@ -1,0 +1,40 @@
+.d-s-none {
+    display: none;
+}
+
+.d-s-block {
+    display: block;
+}
+
+.d-s-flex {
+    display: flex;
+}
+
+
+@media (min-width: $bp-medium) {
+    .d-m-none {
+        display: none;
+    }
+
+    .d-m-block {
+        display: block;
+    }
+    
+    .d-m-flex {
+        display: flex;
+    }
+}
+
+@media (min-width: $bp-big) {
+    .d-l-none {
+        display: none;
+    }
+
+    .d-l-block {
+        display: block;
+    }
+    
+    .d-l-flex {
+        display: flex;
+    }
+}

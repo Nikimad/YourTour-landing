@@ -1,10 +1,10 @@
 .gallery {
+    padding: 30px;
+
     &__list {
         display: grid;
         justify-items: center;
         gap: 1.125em;
-
-        padding: calc(1.25em + 1px);
     }
 
     &__row {
@@ -31,12 +31,10 @@
         &__list {
             row-gap: 1.5em;
             column-gap: 1em;
-
-            padding: 1em;
         }
 
         &__row {
-            height: 310px;
+            height: 301px;
 
             gap: 1em;
         }
@@ -45,8 +43,6 @@
 
 @media (min-width: $bp-big) {
     .gallery {
-        padding: 1.5em;
-        
         &__list {
             row-gap: calc(1.5em + 3px);
         }

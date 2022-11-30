@@ -1,32 +1,19 @@
 .banner {
     display: grid;
+    grid-auto-columns: 80%;
     justify-items: center;
-    row-gap: 40px;
+    justify-content: center;
+    gap: 2.5em;
 
     text-align: center;
 
-    padding-block: 52px;
-    
-
-    &__title {
-        width: min-content;
-    }
-
-    &__description {
-        width: 90%;
-        padding-inline: 16px;
-    }
+    padding-block: 3.25em;
 }
 
-
-@media (min-width: 1024px) {
+@media (min-width: $bp-medium) {
     .banner {
-        row-gap: 50px;
+        grid-auto-columns: 50%;
 
-        padding-block: 119px;
-        
-        &__description {
-            width: 45%;
-        }
+        padding-block: 6em;
     }
 }

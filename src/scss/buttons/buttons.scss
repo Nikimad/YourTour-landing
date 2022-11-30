@@ -1,6 +1,8 @@
+@import './__card';
+@import './_find';
+
 .button {
-    font: inherit;
-    color: inherit;
+    font-family: inherit;
 
     border: none;
     background-color: transparent;
@@ -9,7 +11,43 @@
 
     cursor: pointer;
 
-    padding: 0;
+    &_bg {
+        &_white {
+            background-color: $white;
+        }
+    }
+    &_br {
+        &_10 {
+            border-radius: 10px;
+        }
+    }
+    &_f {
+        &_small {
+            @extend .p_small;
+        }
+    }
+
+    &_col {
+        &_black {
+            color: $black;
+        }
+    
+        &_white {
+            color: $white;
+        }
+    
+        &_gray {
+            color: $gray-300;
+        }
+    
+        &_green {
+            color: $green-400;
+        }
+    
+        &_orange {
+            color: $orange-200;
+        }
+    }
 
     &__simp {
         width: 134px;
@@ -43,44 +81,6 @@
             }
         }
     }
-
-    &__details {
-        display: flex;
-        align-items: center;
-
-        gap: 15px;
-        position: relative;
-
-        font-weight: 700;
-
-        border-radius: 50px;
-
-        padding: 7px 20px;
-
-        &::after {
-            position: relative;
-
-            display: block;
-
-            content: '';
-
-            width: 26px;
-            height: 26px;
-
-            background-image: url('/src/assets/svg/arrow.svg');
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center center;
-        }
-
-        &:hover {
-            background-color: $green-400;
-        }
-
-        &:active {
-            background-color: $orange-200;
-        }
-    }
 }
 
 @media (min-width: $bp-medium) {
@@ -88,10 +88,6 @@
         &__simp {
             width: 235px;
             padding: 15px;
-        }
-
-        &__details {
-            font-size: 23px;
         }
     }
 }

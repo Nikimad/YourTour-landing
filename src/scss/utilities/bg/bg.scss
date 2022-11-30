@@ -1,0 +1,57 @@
+.bg {
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    &_begie {
+        &_100 {
+            background-color: $beige-100;
+        }
+
+        &_200 {
+            background-color: $beige-200;
+        }
+    }
+
+    &_green {
+        &_100 {
+            background-color: $green-100;
+        }
+
+        &_200 {
+            background-color: $green-200;
+        }
+
+        &_300 {
+            background-color: $green-300;
+        }
+
+        &_400 {
+            background-color: $green-400;
+        }
+
+    }
+
+    &_gray {
+        &_100 {
+            background-color: $gray-100;
+        }
+
+        &_200 {
+            background-color: $gray-200;
+        }
+
+        &_300 {
+            background-color: $gray-300;
+        }
+    }
+
+    &_orange {
+        &_100 {
+            background-color: $orange-100;
+        }
+
+        &_200 {
+            background-color: $orange-200;
+        }
+    }
+}

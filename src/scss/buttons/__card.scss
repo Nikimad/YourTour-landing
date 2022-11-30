@@ -5,9 +5,7 @@
     position: relative;
 
     overflow: hidden;
-
-    @extend .border-rad;
-
+    
     cursor: pointer;
 
     &__header {
@@ -19,18 +17,20 @@
     &__footer {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+
+        left: calc(-1em + 3px);
+        bottom: -0.5rem;
     }
 
     &__link {
         position: relative;
 
-        left: calc(-1em + 3px);
-        bottom: -0.5rem;
+        @extend .p_big;
 
-        @extend .p-big;
-
-        display: flex;
-        align-items: center;
+        // @extend .d-flex-center;
         gap: 15px;
 
         border-radius: 3.125rem;
@@ -46,17 +46,12 @@
             height: 26px;
     
             background-image: url('/src/assets/svg/arrow.svg');
-            background-repeat: no-repeat;
             background-size: contain;
-            background-position: center center;
         }
     }
 
     &::after {
         position: absolute;
-
-        top: 0;
-        left: 0;
 
         z-index: -1;
 
@@ -65,13 +60,11 @@
 
         content: '';
 
-        background-repeat: no-repeat;
         background-size: cover;
-        background-position: center center;
 
         transition: 0.3s ease;
-        }
     }
+}
 
 .button__card {
     &:hover::after {
