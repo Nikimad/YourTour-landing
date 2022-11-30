@@ -1,0 +1,30 @@
+.gallery {
+    &__row {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        gap: 0.625em;
+
+        height: 110px;
+
+        width: min(1920px, 100%);
+    }
+}
+
+@media (min-width: $bp-medium) {
+    .gallery {
+        &__row {
+            height: 15em;
+
+            gap: 1em;
+        }
+    }
+}
+
+@media (min-width: $bp-big) {
+    .gallery {
+        &__row {
+            gap: 1.5em;
+        }
+    }
+}
