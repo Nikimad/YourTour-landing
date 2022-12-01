@@ -1,12 +1,4 @@
-@import './variables';
+@import './variables/variables';
 @import './utilities/utilities';
 @import './typography/typography';
-
-@import './general';
-
-@import './container';
-@import './bot-line';
-@import './buttons/buttons';
-
-
-@import './footer/socials';
+@import './general/general';
