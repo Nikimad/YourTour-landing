@@ -1,11 +1,14 @@
 @import './__card';
 @import './_find';
+@import './_form';
 
 .button {
     font-family: inherit;
 
     border: none;
     background-color: transparent;
+
+    outline: none;
 
     transition: 0.3s;
 
@@ -14,6 +17,16 @@
     &_bg {
         &_white {
             background-color: $white;
+        }
+
+        &_green {
+            &_400 {
+                background-color: $green-400;
+            }
+
+            &_100 {
+                background-color: $green-100;
+            }
         }
     }
     &_br {
@@ -48,46 +61,5 @@
             color: $orange-200;
         }
     }
-
-    &__simp {
-        width: 134px;
-
-        border-radius: 10px;
-        padding: 12px;
-
-        &_green {
-            color: $white;
-            background-color: $green-400;
-    
-            &:hover {
-                background-color: $green-300;
-            }
-    
-            &:active {
-                background-color: $green-200;
-            }
-        }
-
-        &_lightgreen {
-            color: $green-400;
-            background-color: $green-100;
-
-            &:hover {
-                background-color: $gray-100;
-            }
-    
-            &:active {
-                background-color: $gray-200;
-            }
-        }
-    }
 }
 
-@media (min-width: $bp-medium) {
-    .button {
-        &__simp {
-            width: 235px;
-            padding: 15px;
-        }
-    }
-}

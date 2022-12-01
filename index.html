@@ -48,7 +48,7 @@
                             <p class="p p_small">от 80 000 руб</p>
                         </div>
                         <div class="button__card__footer">
-                            <a href="#" class="button__card__link link">Подробнее</a>
+                            <button class="button button__card__button">Подробнее</button>
                         </div>
                     </li>
                     <li class="tour button__card br_20to50">
@@ -57,7 +57,7 @@
                             <p class="p p_small">от 80 000 руб</p>
                         </div>
                         <div class="button__card__footer">
-                            <a href="#" class="button__card__link link">Подробнее</a>
+                            <button class=" button button__card__button">Подробнее</button>
                         </div>
                     </li>
                     <li class="tour button__card br_20to50">
@@ -66,7 +66,7 @@
                             <p class="p p_small">от 80 000 руб</p>
                         </div>
                         <div class="button__card__footer">
-                            <a href="#" class="button__card__link link">Подробнее</a>
+                            <button class=" button button__card__button">Подробнее</button>
                         </div>
                     </li>
                     <li class="tour button__card br_20to50">
@@ -75,7 +75,7 @@
                             <p class="p p_small">от 80 000 руб</p>
                         </div>
                         <div class="button__card__footer">
-                            <a href="#" class="button__card__link link">Подробнее</a>
+                            <button class=" button button__card__button">Подробнее</button>
                         </div>
                     </li>
                     <li class="tour button__card br_20to50">
@@ -84,7 +84,7 @@
                             <p class="p p_small">от 80 000 руб</p>
                         </div>
                         <div class="button__card__footer">
-                            <a href="#" class="button__card__link link">Подробнее</a>
+                            <button class=" button button__card__button">Подробнее</button>
                         </div>
                     </li>
                     <li class="tour button__card br_20to50">
@@ -93,7 +93,7 @@
                             <p class="p p_small">от 80 000 руб</p>
                         </div>
                         <div class="button__card__footer">
-                            <a href="#" class="button__card__link link">Подробнее</a>
+                            <button class=" button button__card__button">Подробнее</button>
                         </div>
                     </li>
                 </ul>
@@ -105,7 +105,7 @@
                     <h2 class="heading heading_h2">Собери свой тур</h2>
                     <p class="p p_gray">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
                 </div>
-                <form class="form br_20to50" action="">
+                <form class="form bg_white br_20to50" action="">
                         <label for="name" class="form__label">
                             Имя
                             <input class="form__input" name="name" type="text" id="name" placeholder="Введите ваше имя" required>
@@ -141,30 +141,30 @@
                             Комментарий
                             <textarea class="form__textarea" name="comment" id="comment"></textarea>
                         </label>
-                        <div class="form__label form__radios">
-                            Вам есть 18 лет?
-                            <div class="form__radios__wrapper">
-                                <label for="ageValid" class="form__radio__label">
-                                    <input class="form__radio" name="age" type="radio" id="ageValid">
-                                    <span class="form__radio__pseudo"><span class="bullet"></span></span>Да
-                                </label>
-                                <label for="ageInvalid" class="form__radio__label">
-                                    <input class="form__radio" name="age" type="radio" id="ageInvalid">
-                                    <span class="form__radio__pseudo"><span class="bullet"></span></span>Нет
-                                </label>
+                        <div class="form__label">
+                            <p class="p">Вам есть 18 лет?</p>
+                            <div class="radios">
+                                <div class="radio__wrapper">
+                                    <input class="form__radio" name="ageValidation" type="radio" id="validAge" aria-choose="Yes" required>
+                                    <label class="label__radio" for="validAge"></label>Да
+                                </div>
+                                <div class="radio__wrapper">
+                                    <input class="form__radio" name="ageValidation" type="radio" id="invalidAge" aria-choose="No">
+                                    <label class="label__radio" for="invalidAge"></label>Нет
+                                </div>
                             </div>
                         </div>
-                        <label for="license" class="form__label__license">
-                            <input name="license" type="checkbox" id="license" class="form__checkbox" required>
-                            <span class="form__checkbox__pseudo"><span class="mark"></span></span>
-                            <span class="form__license">Нажимая кнопку, я принимаю условия <a class="form__license__link" href="#">Лицензионного договора</a></span>
-                        </label>
+                        <div class="form__label__wrapper">
+                            <input type="checkbox" id="license" class="form__checkbox" required>
+                            <label for="license" class="label__checkbox"></label>
+                            <p class="p p_small p_gray checkbox__text">Нажимая кнопку, я принимаю условия<a class="link p_black" href="#"> Лицензионного договора</a></p>
+                        </div>
                         <div class="form__buttons">
                             <label for="submit">
-                                <input class="button button__simp button__simp_green" name="submit" type="submit" value="Найти тур">
+                                <input class="button button_col_white button_bg_green_400 button__form button__form_submit" name="submit" type="submit" value="Найти тур">
                             </label>
                             <label for="reset">
-                                <input class="button button__simp button__simp_lightgreen" name="reset" type="reset">
+                                <input class="button button_col_green button_bg_green_100 button__form button__form_reset" name="reset" type="reset">
                             </label>
                         </div>
                 </form>
@@ -268,7 +268,7 @@
                             </ul>
                         </div>
                         <div class="button__card__footer">
-                            <a href="#" class="button__card__link link">Подробнее</a>
+                            <button class="button button__card__button">Подробнее</button>
                             <ul class="story__socials__list list">
                                 <li><a class="link d-s-none d-m-flex" href="#">instagram</a></li>
                                 <li><a class="link d-s-none d-m-flex" href="#">facebook</a></li>
@@ -285,7 +285,7 @@
                             </p>
                         </div>
                         <div class="button__card__footer">
-                            <a href="#" class="button__card__link link">Подробнее</a>
+                            <button class="button button__card__button">Подробнее</button>
                             <ul class="story__socials__list list">
                                 <li><a class="link d-s-none d-m-flex" href="#">instagram</a></li>
                                 <li><a class="link d-s-none d-m-flex" href="#">ВКонтакте</a></li>
@@ -301,7 +301,7 @@
                             </p>
                         </div>
                         <div class="button__card__footer">
-                            <a href="#" class="button__card__link link">Подробнее</a>
+                            <button class="button button__card__button">Подробнее</button>
                             <ul class="story__socials__list list">
                                 <li><a class="link d-s-none d-m-flex" href="#">instagram</a></li>
                                 <li><a class="link d-s-none d-m-flex" href="#">facebook</a></li>

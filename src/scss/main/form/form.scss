@@ -1,0 +1,34 @@
+@import './_fields';
+@import './_select';
+@import './_inputDate';
+@import './_checkbox';
+@import './_radio';
+
+.form {
+    display: grid;
+
+    gap: 1.875em;
+
+    padding: 1.25em;
+    margin: 0;
+
+}
+
+@media (min-width: $bp-medium) {
+    .form {
+        grid-template-columns: 1fr 1fr;
+
+        column-gap: 1em;
+        row-gap: 1.5em;
+
+        padding: 3em;
+    }
+}
+
+@media (min-width: $bp-big) {
+    .form {
+        column-gap: 1.5em;
+
+        padding: 3.5em;
+    }
+}

@@ -24,12 +24,13 @@
         bottom: -0.5rem;
     }
 
-    &__link {
+    &__button {
         position: relative;
 
         left: calc(-1em + 3px);
 
         @extend .p_big;
+        color: inherit;
 
         display: flex;
         justify-content: center;
@@ -54,6 +55,7 @@
             background-image: url('/src/assets/svg/arrow.svg');
             background-size: contain;
         }
+
     }
 
     &::after {
@@ -77,11 +79,23 @@
         transform: scale(1.2);
     }
 
-    &:hover &__link {
+    &:hover &__button {
         background-color: $green-400;
 
         &:active {
             background-color: $orange-200;
         }
     }
+
+    &__button {
+        &:hover,
+        &:focus {
+            background-color: $green-400;
+        }
+
+        &:active {
+            background-color: $orange-200;
+        }
+    }
 }
+

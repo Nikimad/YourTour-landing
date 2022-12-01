@@ -1,7 +1,8 @@
 .button__find {
     padding: 5px 20px;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $white;
 
         background-color: $orange-200;

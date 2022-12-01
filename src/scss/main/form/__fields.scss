@@ -1,18 +1,4 @@
-@import './_select';
-@import './_inputDate';
-@import './_radio';
-@import './_checkbox';
-
 .form {
-    display: grid;
-
-    gap: 1.875em;
-
-    background-color: $white;
-
-    padding: 1.25em;
-    margin: 0;
-
     &__label {
         display: grid;
         gap: 0.5em;
@@ -30,11 +16,11 @@
         outline: none;
 
         border: 1px solid $beige-200;
-        border-radius: 0.625em;
+        border-radius: 0.625rem;
 
         transition: 0.3s;
 
-        padding: 0.625em;
+        padding: calc(0.625em - 1px);
         margin: 0;
 
         &::placeholder {
@@ -65,16 +51,9 @@
 
 @media (min-width: $bp-medium) {
     .form {
-        grid-template-columns: 1fr 1fr;
-
-        column-gap: 1em;
-        row-gap: calc(1.5em + 3px);
-
-        padding: 3em;
-
         &__label__comment,
         &__radios,
-        &__label__license,
+        &__label__wrapper,
         &__buttons {
             grid-column: 1 / span 2;
         }
@@ -82,7 +61,7 @@
         &__input,
         &__select,
         &__textarea {
-            padding: 1em;    
+            padding: calc(1em - 1px);    
         }
 
         &__textarea {
@@ -92,13 +71,5 @@
         &__buttons {
             gap: 1.5em;
         }
-    }
-}
-
-@media (min-width: $bp-big) {
-    .form {
-        column-gap: 1.5em;
-
-        padding: 3.5em;
     }
 }

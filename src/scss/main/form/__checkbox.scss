@@ -1,0 +1,79 @@
+.form {
+    &__checkbox {
+        position: absolute;
+        z-index: -1;
+
+        &:checked {
+            & ~ .label__checkbox  {
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &:hover,
+        &:focus {
+            & ~ .label__checkbox  {
+                background-color: $beige-200;
+            }
+        }
+    }
+
+    &__label__wrapper {
+        display: flex;
+    
+        gap: 0.625em;
+    }
+}
+
+.label__checkbox {
+    position: relative;
+
+    flex-shrink: 0;
+    
+    width: 20px;
+    height: 20px;
+
+    border: 2px solid $black;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+
+
+    &::before {
+        position: absolute;
+
+        content: '';
+
+        background-image: url('/src/assets/svg/mark.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 10px 10px;
+
+        width: 100%;
+        height: 100%;
+
+        opacity: 0;
+    }
+}
+
+
+@media (min-width: $bp-medium) {
+    .label__checkbox {
+        width: 26px;
+        height: 26px;
+
+        &::before {
+            background-size: 14px 14px;
+        }
+    }
+}
+
+@media (min-width: $bp-big) {
+    .form {
+        &__label__wrapper {
+            gap: 1em;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.button__form {
+    font: inherit;
+    
+    width: 134px;
+
+    border-radius: 10px;
+    padding: 12px;
+
+    &_submit {
+        &:hover,
+        &:focus {
+            background-color: $green-300;
+        }
+
+        &:active {
+            background-color: $green-200;
+        }
+    }
+
+    &_reset {
+
+        &:hover,
+        &:focus {
+            background-color: $gray-100;
+        }
+
+        &:active {
+            background-color: $gray-200;
+        }
+    }
+}
+
+@media (min-width: $bp-medium) {
+    .button__form {
+            width: 235px;
+            padding: 15px;
+    }
+}
