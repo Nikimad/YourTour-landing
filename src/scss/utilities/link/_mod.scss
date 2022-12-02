@@ -45,11 +45,14 @@
 
     &_normal {
         @extend .p_normal;
+    }
 
+    &_small,
+    &_normal {
         &::after {
             height: 1px;
 
-            bottom: 0px;
+            bottom: 1px;
         }
     }
 

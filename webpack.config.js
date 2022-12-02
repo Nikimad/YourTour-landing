@@ -13,7 +13,6 @@ const config = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        assetModuleFilename: 'assets/[name][ext]'
     },
     devServer: {
         open: true,

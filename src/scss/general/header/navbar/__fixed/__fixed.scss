@@ -1,0 +1,36 @@
+.navbar {
+    &__wrapper {
+
+        &__fixed {
+            position: fixed;
+    
+            top: 0;
+            left: 0;
+
+            z-index: 10;
+
+            color: $black;
+    
+            background-color: rgba(243, 239, 232, 0.6);
+            backdrop-filter: blur(27px);
+
+            width: 100%;
+
+            animation: move-down 0.3s ease;
+
+            .logo {
+                fill: $black;
+            }
+        }
+    }
+}
+
+
+@keyframes move-down {
+    from {
+        transform: translateY(-100%);
+    } 
+    to {
+        transform: translateY(0);
+    }
+}
