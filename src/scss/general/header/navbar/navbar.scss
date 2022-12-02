@@ -7,10 +7,35 @@
     align-items: center;
 
     padding-block: 2em;
+
+    &__wrapper {
+
+        &__fixed {
+            position: fixed;
+    
+            top: 0;
+            left: 0;
+
+            z-index: 10;
+
+            color: $black;
+    
+            background-color: rgba(243, 239, 232, 0.6);
+            backdrop-filter: blur(27px);
+
+            width: 100%;
+
+            .logo {
+                fill: $black;
+            }
+        }
+    }
 }
+
 
 @media (min-width: 1024px) {
     .navbar {
         padding-block: 1.4em;
     }
 }
+

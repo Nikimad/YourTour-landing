@@ -1,0 +1,64 @@
+.button {
+    //  background
+    &_bg {
+        &_tp {
+            background-color: transparent;
+        }
+
+        &_white {
+            background-color: $white;
+        }
+
+        &_green {
+            &_400 {
+                background-color: $green-400;
+            }
+
+            &_100 {
+                background-color: $green-100;
+            }
+        }
+    }
+    //  border radius
+    &_br {
+        &_10 {
+            border-radius: 10px;
+        }
+    }
+    //  font size
+    &_f {
+        &_small {
+            @extend .p_small;
+        }
+
+        &_normal {
+            @extend .p_normal;
+        }
+
+        &_big {
+            @extend .p_big;
+        }
+    }
+    //  collor
+    &_col {
+        &_black {
+            color: $black;
+        }
+    
+        &_white {
+            color: $white;
+        }
+    
+        &_gray {
+            color: $gray-300;
+        }
+    
+        &_green {
+            color: $green-400;
+        }
+    
+        &_orange {
+            color: $orange-200;
+        }
+    }
+}

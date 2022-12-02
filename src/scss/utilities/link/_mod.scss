@@ -1,0 +1,74 @@
+
+//  collors
+.link {
+
+    &_active {
+        color: $orange-200;
+
+        &::after {
+            width: 100%;
+
+            background-color: $orange-200;
+        }
+
+    }
+
+    &_white {
+        color: $white;
+
+        &::after {
+            background-color: $white;
+        }
+
+        &:active {
+            color: $orange-200;
+        }
+    }
+
+    &_black {
+        color: $black;
+
+        &::after {
+            background-color: $black;
+        }
+
+        &:active {
+            color: $green-400;
+        }
+    }
+}
+//  sizes
+.link {
+    &_small {
+        @extend .p_small;
+    }
+
+    &_normal {
+        @extend .p_normal;
+
+        &::after {
+            height: 1px;
+
+            bottom: 0px;
+        }
+    }
+
+    &_big {
+        @extend .p_big;
+
+        &::after {
+            height: 2px;
+
+            bottom: -6px;
+        }
+    }
+}
+
+@keyframes link-hover {
+    from {
+        width: 0%;
+    } 
+    to {
+        width: 100%;
+    }
+}

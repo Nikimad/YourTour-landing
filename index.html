@@ -10,17 +10,19 @@
 <body class="body bg_beige_100">
     <header class="header">
         <div class="container">
-            <div class="navbar">
-                <svg class="logo" viewBox="0 0 182 32">
+            <div class="navbar__wrapper">
+                <div class="navbar">
+                    <svg class="logo" viewBox="0 0 182 32">
                     <use xlink:href="assets/svg/logo.svg#logo"></use>
-                </svg>
-                <nav class="nav d-s-none d-m-flex">
-                    <a href="#tours" class="nav__item link link_white">Туры</a>
-                    <a href="#createTour" class="nav__item link link_white">Создать тур</a>
-                    <a href="#reviews" class="nav__item link link_white">Отзывы</a>
-                    <a href="#stories" class="nav__item link link_white">Истории</a>
-                </nav>
-                <p class="p">+7 999 999 99 99</p>
+                    </svg>
+                    <nav class="nav d-s-none d-m-flex">
+                    <a href="#tours" class="link link_normal link_white">Туры</a>
+                    <a href="#createTour" class="link link_normal link_white">Создать тур</a>
+                    <a href="#reviews" class="link link_normal link_white">Отзывы</a>
+                    <a href="#stories" class="link link_normal link_white">Истории</a>
+                    </nav>
+                    <p class="p">+7 999 999 99 99</p>
+                </div>
             </div>
             <div class="banner">
                 <h1 class="heading heading_h1">Идеальные путешествия существуют</h1>
@@ -35,11 +37,11 @@
                 <div class="section__header">
                     <h2 class="heading heading_h2">Выбери свой тур</h2>
                     <ul class="tours__nav list">
-                        <li><a href="#" class="link link_active p_big">Популярные</a></li>
-                        <li><a href="#" class="link link_black p_big">Авторские</a></li>
-                        <li><a href="#" class="link link_black p_big">Походы</a></li>
-                        <li><a href="#" class="link link_black p_big">Сплавы</a></li>
-                        <li><a href="#" class="link link_black p_big">Велопрогулки</a></li>
+                        <li><a href="#" class="link link_big link_active">Популярные</a></li>
+                        <li><a href="#" class="link link_big link_black">Авторские</a></li>
+                        <li><a href="#" class="link link_big link_black">Походы</a></li>
+                        <li><a href="#" class="link link_big link_black">Сплавы</a></li>
+                        <li><a href="#" class="link link_big link_black">Велопрогулки</a></li>
                     </ul>
                     </div>
                 <ul class="tours__list list">
@@ -49,7 +51,7 @@
                             <p class="p p_small">от 80 000 руб</p>
                         </div>
                         <div class="button__card__footer">
-                            <button class="button button__card__button">Подробнее</button>
+                            <button class="button button_f_big button_col_white button_bg_tp button__card__button">Подробнее</button>
                         </div>
                     </li>
                     <li class="tour button__card br_20to50">
@@ -58,7 +60,7 @@
                             <p class="p p_small">от 80 000 руб</p>
                         </div>
                         <div class="button__card__footer">
-                            <button class=" button button__card__button">Подробнее</button>
+                            <button class="button button_f_big button_col_white button_bg_tp button__card__button">Подробнее</button>
                         </div>
                     </li>
                     <li class="tour button__card br_20to50">
@@ -67,7 +69,7 @@
                             <p class="p p_small">от 80 000 руб</p>
                         </div>
                         <div class="button__card__footer">
-                            <button class=" button button__card__button">Подробнее</button>
+                            <button class="button button_f_big button_col_white button_bg_tp button__card__button">Подробнее</button>
                         </div>
                     </li>
                     <li class="tour button__card br_20to50">
@@ -76,7 +78,7 @@
                             <p class="p p_small">от 80 000 руб</p>
                         </div>
                         <div class="button__card__footer">
-                            <button class=" button button__card__button">Подробнее</button>
+                            <button class="button button_f_big button_col_white button_bg_tp button__card__button">Подробнее</button>
                         </div>
                     </li>
                     <li class="tour button__card br_20to50">
@@ -85,7 +87,7 @@
                             <p class="p p_small">от 80 000 руб</p>
                         </div>
                         <div class="button__card__footer">
-                            <button class=" button button__card__button">Подробнее</button>
+                            <button class="button button_f_big button_col_white button_bg_tp button__card__button">Подробнее</button>
                         </div>
                     </li>
                     <li class="tour button__card br_20to50">
@@ -94,7 +96,7 @@
                             <p class="p p_small">от 80 000 руб</p>
                         </div>
                         <div class="button__card__footer">
-                            <button class=" button button__card__button">Подробнее</button>
+                            <button class="button button_f_big button_col_white button_bg_tp button__card__button">Подробнее</button>
                         </div>
                     </li>
                 </ul>
@@ -158,14 +160,14 @@
                         <div class="form__label__wrapper">
                             <input type="checkbox" id="license" class="form__checkbox" required>
                             <label for="license" class="label__checkbox"></label>
-                            <p class="p p_small p_gray checkbox__text">Нажимая кнопку, я принимаю условия<a class="link link_black" href="#"> Лицензионного договора</a></p>
+                            <p class="p p_small p_gray checkbox__text">Нажимая кнопку, я принимаю условия<a class="link link_normal link_black" href="#"> Лицензионного договора</a></p>
                         </div>
                         <div class="form__buttons">
                             <label for="submit">
-                                <input class="button button_col_white button_bg_green_400 button__form button__form_submit" name="submit" type="submit" value="Найти тур">
+                                <input class="button button_f_normal button_col_white button_bg_green_400 button__form button__form_submit" name="submit" type="submit" value="Найти тур">
                             </label>
                             <label for="reset">
-                                <input class="button button_col_green button_bg_green_100 button__form button__form_reset" name="reset" type="reset">
+                                <input class="button button_f_normal button_col_green button_bg_green_100 button__form button__form_reset" name="reset" type="reset">
                             </label>
                         </div>
                 </form>
@@ -269,11 +271,11 @@
                             </ul>
                         </div>
                         <div class="button__card__footer">
-                            <button class="button button__card__button">Подробнее</button>
+                            <button class="button button_f_big button_col_white button_bg_tp button__card__button">Подробнее</button>
                             <ul class="story__socials__list list">
-                                <li><a class="link link_white d-s-none d-m-flex" href="#">instagram</a></li>
-                                <li><a class="link link_white d-s-none d-m-flex" href="#">facebook</a></li>
-                                <li><a class="link link_white d-s-none d-m-flex" href="#">YouYube</a></li>
+                                <li><a class="link link_normal link_white d-s-none d-m-flex" href="#">instagram</a></li>
+                                <li><a class="link link_normal link_white d-s-none d-m-flex" href="#">facebook</a></li>
+                                <li><a class="link link_normal link_white d-s-none d-m-flex" href="#">YouYube</a></li>
                             </ul>
                         </div>
                     </li>
@@ -286,10 +288,10 @@
                             </p>
                         </div>
                         <div class="button__card__footer">
-                            <button class="button button__card__button">Подробнее</button>
+                            <button class="button button_f_big button_col_white button_bg_tp button__card__button">Подробнее</button>
                             <ul class="story__socials__list list">
-                                <li><a class="link link_white d-s-none d-m-flex" href="#">instagram</a></li>
-                                <li><a class="link link_white d-s-none d-m-flex" href="#">ВКонтакте</a></li>
+                                <li><a class="link link_normal link_white d-s-none d-m-flex" href="#">instagram</a></li>
+                                <li><a class="link link_normal link_white d-s-none d-m-flex" href="#">ВКонтакте</a></li>
                             </ul>
                         </div>
                     </li>
@@ -302,11 +304,11 @@
                             </p>
                         </div>
                         <div class="button__card__footer">
-                            <button class="button button__card__button">Подробнее</button>
+                            <button class="button button_f_big button_col_white button_bg_tp button__card__button">Подробнее</button>
                             <ul class="story__socials__list list">
-                                <li><a class="link link_white d-s-none d-m-flex" href="#">instagram</a></li>
-                                <li><a class="link link_white d-s-none d-m-flex" href="#">facebook</a></li>
-                                <li><a class="link link_white d-s-none d-m-flex" href="#">ВКонтакте</a></li>
+                                <li><a class="link link_normal link_white d-s-none d-m-flex" href="#">instagram</a></li>
+                                <li><a class="link link_normal link_white d-s-none d-m-flex" href="#">facebook</a></li>
+                                <li><a class="link link_normal link_white d-s-none d-m-flex" href="#">ВКонтакте</a></li>
                             </ul>
                         </div>
                     </li>
@@ -315,7 +317,7 @@
             <img class="cta__img br_20to50" src="assets/images/cta.jpg" alt="">
             <div class="cta__body">
                 <h3 class="heading heading_h3">Пора в путешествие<br>вместе с нами!</h3>
-                <p class="p p_gray">Напиши на почту и узнай подробности<br>на <a class="link link_black" href="#">yourtour@gmail.com</a></p>
+                <p class="p p_gray">Напиши на почту и узнай подробности<br>на <a class="link link_normal link_black" href="#">yourtour@gmail.com</a></p>
             </div>
         </section>
     </main>
@@ -323,9 +325,9 @@
         <div class="socials container">
             <p class="p p_normal p_gray">Наши социальные сети</p>
             <ul class="list socials__list">
-                <li class="list__item"><a href="#" class="socials__link link link_black">instagram</a></li>
-                <li class="list__item"><a href="#" class="socials__link link link_black">facebook</a></li>
-                <li class="list__item"><a href="#" class="socials__link link link_black">vkontakte</a></li>
+                <li class="list__item"><a href="#" class="socials__link link link_normal link_black">instagram</a></li>
+                <li class="list__item"><a href="#" class="socials__link link link_normal link_black">facebook</a></li>
+                <li class="list__item"><a href="#" class="socials__link link link_normal link_black">vkontakte</a></li>
             </div>
         </div>
     </footer>

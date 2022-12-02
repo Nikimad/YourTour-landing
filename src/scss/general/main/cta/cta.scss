@@ -4,7 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
 
-    gap: 1.875rem;
+    gap: 1.875em;
 
     text-align: center;
 
@@ -23,6 +23,8 @@
 @media (min-width: 1024px) {
     .cta {
         text-align: left;
+
+        gap: 1.5em;
         
         &__img {
             width: 18.5em;

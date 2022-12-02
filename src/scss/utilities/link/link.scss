@@ -1,7 +1,8 @@
+@import './mod';
+
 .link {
     position: relative;
 
-    color: inherit;
     text-decoration: none;
 
     outline: none;
@@ -9,40 +10,13 @@
     &::after {
         position: absolute;
 
-        height: 2px;
+        height: 1px;
 
         content: '';
 
         left: 50%;
-        bottom: -6px;
 
         transform: translateX(-50%);
-    }
-
-    &_active {
-        color: $orange-200;
-
-        &::after {
-            width: 100%;
-
-            background-color: $orange-200;
-        }
-    }
-
-    &_white {
-        color: $white;
-
-        &::after {
-            background-color: $white;
-        }
-    }
-
-    &_black {
-        color: $black;
-
-        &::after {
-            background-color: $black;
-        }
     }
 
     &:hover,
@@ -50,14 +24,5 @@
         &::after {
             animation: link-hover 0.3s ease forwards;
         }
-    }
-}
-
-@keyframes link-hover {
-    from {
-        width: 0%;
-    } 
-    to {
-        width: 100%;
     }
 }

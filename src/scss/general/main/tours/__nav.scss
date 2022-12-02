@@ -5,7 +5,7 @@
         flex-wrap: wrap;
         gap: 0.625em;
 
-        margin-top: 0.625em;
+        margin-block: 0.625em 0;
     }
 }
 
@@ -14,7 +14,7 @@
         &__nav {
             gap: 1.5em;
 
-            margin-top: 0.25em;
+            margin-block: 0.25em;
         }
     }
 }

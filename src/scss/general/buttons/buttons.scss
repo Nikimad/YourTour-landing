@@ -1,65 +1,17 @@
+@import './mod';
 @import './__card';
-@import './_find';
-@import './_form';
+@import './__find';
+@import './__form';
 
 .button {
     font-family: inherit;
 
     border: none;
-    background-color: transparent;
 
     outline: none;
 
     transition: 0.3s;
 
     cursor: pointer;
-
-    &_bg {
-        &_white {
-            background-color: $white;
-        }
-
-        &_green {
-            &_400 {
-                background-color: $green-400;
-            }
-
-            &_100 {
-                background-color: $green-100;
-            }
-        }
-    }
-    &_br {
-        &_10 {
-            border-radius: 10px;
-        }
-    }
-    &_f {
-        &_small {
-            @extend .p_small;
-        }
-    }
-
-    &_col {
-        &_black {
-            color: $black;
-        }
-    
-        &_white {
-            color: $white;
-        }
-    
-        &_gray {
-            color: $gray-300;
-        }
-    
-        &_green {
-            color: $green-400;
-        }
-    
-        &_orange {
-            color: $orange-200;
-        }
-    }
 }
 

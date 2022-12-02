@@ -7,13 +7,15 @@
 
     text-align: center;
 
-    padding-block: 3.25em;
+    padding-top: 3.25em;
+    padding-bottom: 3.25em;
 }
 
 @media (min-width: $bp-medium) {
     .banner {
         grid-auto-columns: 50%;
 
-        padding-block: 6em;
+        padding-top: 6em;
+        padding-bottom: 6em;
     }
 }

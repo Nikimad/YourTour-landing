@@ -29,9 +29,6 @@
 
         left: calc(-1em + 3px);
 
-        @extend .p_big;
-        color: inherit;
-
         display: flex;
         justify-content: center;
         align-items: center;
