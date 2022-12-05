@@ -1,37 +1,44 @@
 .socials {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 7px;
 
     padding-block: 25px;
 
+    &__title {
+        margin-inline: auto;
+    }
+
     &__list {
         display: flex;
         align-items: center;
+
         gap: 15px;
 
-        & :nth-child(1) .link::before {
-            background-image: url('/src/assets/svg/instagram.svg');
-        }
-
-        & :nth-child(2) .link::before {
-            background-image: url('/src/assets/svg/facebook.svg');
-        }
-
-        & :nth-child(3) .link::before {
-            background-image: url('/src/assets/svg/vk.svg');
-        }
+        margin-inline: auto;
     }
 
-    &__link {
+    &__item {
         display: flex;
         align-items: center;
 
         position: relative;
 
         gap: 5px;
+
+        &:nth-child(1)::before {
+            background-image: url('/src/assets/svg/instagram.svg');
+        }
+
+        &:nth-child(2)::before {
+            background-image: url('/src/assets/svg/facebook.svg');
+        }
+
+        &:nth-child(3)::before {
+            background-image: url('/src/assets/svg/vk.svg');
+        }
 
         &::before {
             content: '';
@@ -43,24 +50,30 @@
             background-position: right 2px center;
         }
     }
+
+
 }
+
 
 @media (min-width: $bp-medium) {
     .socials {
-        justify-content: space-between;
         gap: 25px;
-
+        
         padding-block: 30px;
 
-        &__link {
-            gap: 10px;
+        &__title {
+            margin-inline: 0;
         }
 
         &__list {
             gap: 25px;
+
+            margin-inline: 0;
         }
 
-        &__link {
+        &__item {
+            gap: 10px;
+
             &::before {
                 width: 26px;
                 height: 26px;
