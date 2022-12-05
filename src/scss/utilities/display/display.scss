@@ -1,15 +1,28 @@
-.d-s-none {
+.d-xs-none {
     display: none;
 }
 
-.d-s-block {
+.d-xs-block {
     display: block;
 }
 
-.d-s-flex {
+.d-xs-flex {
     display: flex;
 }
 
+@media (min-width: $bp-small) {
+    .d-s-none {
+        display: none;
+    }
+    
+    .d-s-block {
+        display: block;
+    }
+    
+    .d-s-flex {
+        display: flex;
+    }
+}
 
 @media (min-width: $bp-medium) {
     .d-m-none {

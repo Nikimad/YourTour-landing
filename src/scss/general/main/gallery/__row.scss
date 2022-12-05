@@ -7,15 +7,22 @@
 
         height: 110px;
 
+
         width: min(1920px, 100%);
+    }
+}
+
+@media (min-width: $bp-gallery) { 
+    .gallery {
+        &__row {
+            height: 300px;
+        }
     }
 }
 
 @media (min-width: $bp-medium) {
     .gallery {
         &__row {
-            height: 15em;
-
             gap: 1em;
         }
     }

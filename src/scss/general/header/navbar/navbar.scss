@@ -11,7 +11,7 @@
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: $bp-medium) {
     .navbar {
         padding-block: 1.4em;
     }
