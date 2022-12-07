@@ -23,7 +23,7 @@
                     <a href="#reviews" class="link link_normal link_white">Отзывы</a>
                     <a href="#stories" class="link link_normal link_white">Истории</a>
                     </nav>
-                    <p class="p">+7 999 999 99 99</p>
+                    <a class="link link_normal link_white" href="tel: +7 999 999 99 99">+7 999 999 99 99</a>
                 </div>
             </div>
             <div class="banner">
@@ -110,7 +110,7 @@
                     <h2 class="heading heading_h2">Собери свой тур</h2>
                     <p class="p p_gray">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
                 </div>
-                <form class="form bg_white br_20to50" action="">
+                <form class="form bg_white br_20to50">
                         <label for="name" class="form__label">
                             Имя
                             <input class="form__input" name="name" type="text" id="name" placeholder="Введите ваше имя" required>
@@ -150,11 +150,11 @@
                             <p class="p">Вам есть 18 лет?</p>
                             <div class="radios">
                                 <div class="radio__wrapper">
-                                    <input class="form__radio" name="ageValidation" type="radio" id="validAge" aria-choose="Yes" required>
+                                    <input class="form__radio" name="ageValidation" type="radio" id="validAge" data-choose="Yes" required>
                                     <label class="label__radio" for="validAge"></label>Да
                                 </div>
                                 <div class="radio__wrapper">
-                                    <input class="form__radio" name="ageValidation" type="radio" id="invalidAge" aria-choose="No">
+                                    <input class="form__radio" name="ageValidation" type="radio" id="invalidAge" data-choose="No">
                                     <label class="label__radio" for="invalidAge"></label>Нет
                                 </div>
                             </div>
@@ -166,10 +166,10 @@
                         </div>
                         <div class="form__buttons">
                             <label for="submit">
-                                <input class="button button_f_normal button_col_white button_bg_green_400 button__form button__form_submit" name="submit" type="submit" value="Найти тур">
+                                <input id="submit" class="button button_f_normal button_col_white button_bg_green_400 button__form button__form_submit" name="submit" type="submit" value="Найти тур">
                             </label>
                             <label for="reset">
-                                <input class="button button_f_normal button_col_green button_bg_green_100 button__form button__form_reset" name="reset" type="reset">
+                                <input id="reset" class="button button_f_normal button_col_green button_bg_green_100 button__form button__form_reset" name="reset" type="reset">
                             </label>
                         </div>
                 </form>
@@ -314,12 +314,14 @@
                             </ul>
                         </div>
                     </li>
+                </ul>
+            </div>
         </section>
         <section class="section cta">
             <img class="cta__img br_20to50" src="assets/images/cta.jpg" alt="">
             <div class="cta__body">
                 <h3 class="heading heading_h3">Пора в путешествие<br>вместе с нами!</h3>
-                <p class="p p_gray">Напиши на почту и узнай подробности<br>на <a class="link link_normal link_black" href="#">yourtour@gmail.com</a></p>
+                <p class="p p_gray">Напиши на почту и узнай подробности<br>на <a class="link link_normal link_black" href="mailto: yourtour@gmail.com">yourtour@gmail.com</a></p>
             </div>
         </section>
     </main>
@@ -330,7 +332,7 @@
                 <li class="socials__item"><a href="#" class="socials__link link link_normal link_black">instagram</a></li>
                 <li class="socials__item"><a href="#" class="socials__link link link_normal link_black">facebook</a></li>
                 <li class="socials__item"><a href="#" class="socials__link link link_normal link_black">vkontakte</a></li>
-            </div>
+            </ul>
         </div>
     </footer>
 </body>
