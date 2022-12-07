@@ -4,27 +4,27 @@
         gap: 1.125rem;
 
         & > :nth-child(1)::after {
-            background-image: $grad, url('/src/assets/images/card-1.jpg');
+            background-image: $grad, url("/src/assets/images/card-1.jpg");
         }
 
         & > :nth-child(2)::after {
-            background-image: $grad, url('/src/assets/images/card-2.jpg');
+            background-image: $grad, url("/src/assets/images/card-2.jpg");
         }
 
         & > :nth-child(3)::after {
-            background-image: $grad, url('/src/assets/images/card-3.jpg');
+            background-image: $grad, url("/src/assets/images/card-3.jpg");
         }
 
         & > :nth-child(4)::after {
-            background-image: $grad, url('/src/assets/images/card-4.jpg');
+            background-image: $grad, url("/src/assets/images/card-4.jpg");
         }
 
         & > :nth-child(5)::after {
-            background-image: $grad, url('/src/assets/images/card-5.jpg');
+            background-image: $grad, url("/src/assets/images/card-5.jpg");
         }
-        
+
         & > :nth-child(6)::after {
-            background-image: $grad, url('/src/assets/images/card-6.jpg');
+            background-image: $grad, url("/src/assets/images/card-6.jpg");
         }
     }
 }

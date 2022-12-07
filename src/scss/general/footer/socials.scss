@@ -4,7 +4,6 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 7px;
-
     padding-block: 25px;
 
     &__title {
@@ -14,18 +13,14 @@
     &__list {
         display: flex;
         align-items: center;
-
         gap: 15px;
-
         margin-inline: auto;
     }
 
     &__item {
         display: flex;
         align-items: center;
-
         position: relative;
-
         gap: 5px;
 
         &:nth-child(1)::before {
@@ -42,10 +37,8 @@
 
         &::before {
             content: '';
-
             width: 20px;
             height: 20px;
-
             background-repeat: no-repeat;
             background-position: right 2px center;
         }
@@ -54,11 +47,9 @@
 
 }
 
-
 @media (min-width: $bp-medium) {
     .socials {
         gap: 25px;
-        
         padding-block: 30px;
 
         &__title {

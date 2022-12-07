@@ -1,14 +1,13 @@
-@import './_row';
+@import "./_row";
 
 .gallery {
     padding-inline: 1.25rem;
-    
+
     &__list {
         display: grid;
         justify-items: center;
         gap: 1.125em;
     }
-
 
     &__photo {
         width: 100%;

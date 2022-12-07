@@ -1,16 +1,12 @@
-
 //  collors
 .link {
-
     &_active {
         color: $orange-200;
 
         &::after {
             width: 100%;
-
             background-color: $orange-200;
         }
-
     }
 
     &_white {
@@ -70,7 +66,7 @@
 @keyframes link-hover {
     from {
         width: 0%;
-    } 
+    }
     to {
         width: 100%;
     }

@@ -6,10 +6,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding-block: 2em;
 }
-
 
 @media (min-width: $bp-medium) {
     .navbar {

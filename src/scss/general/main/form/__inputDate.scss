@@ -1,9 +1,7 @@
 .form {
-    &__input[type='date'] {
+    &__input[type="date"] {
         position: relative;
-
         appearance: none;
-
         text-transform: uppercase;
 
         &:required:invalid {
@@ -12,27 +10,19 @@
 
         &::-webkit-calendar-picker-indicator {
             position: absolute;
-
             z-index: 1;
-
             width: 100%;
             height: 100%;
-
             background: none;
-
             cursor: pointer;
         }
 
         &:invalid {
             &::after {
                 position: absolute;
-
                 left: 0;
-
                 display: block;
-
-                content: 'ДД.ММ.ГГГГ';
-
+                content: "ДД.ММ.ГГГГ";
                 padding: inherit;
             }
 
@@ -50,6 +40,5 @@
                 visibility: visible;
             }
         }
-    
     }
 }

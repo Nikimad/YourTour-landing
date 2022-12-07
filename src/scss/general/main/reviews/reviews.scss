@@ -1,10 +1,9 @@
-@import './review';
-@import './_author';
+@import "./review";
+@import "./_author";
 
 .reviews {
     &__list {
         display: grid;
-
         gap: 1.125rem;
     }
 }

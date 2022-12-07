@@ -1,21 +1,15 @@
-@import './mod';
+@import "./mod";
 
 .link {
     position: relative;
-
     text-decoration: none;
-
     outline: none;
 
     &::after {
         position: absolute;
-
         height: 1px;
-
-        content: '';
-
+        content: "";
         left: 50%;
-
         transform: translateX(-50%);
     }
 

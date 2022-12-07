@@ -4,13 +4,11 @@
     &:hover,
     &:focus {
         color: $white;
-
         background-color: $orange-200;
     }
-
+    
     &:active {
         color: $black;
-
         background-color: $orange-100;
     }
 }

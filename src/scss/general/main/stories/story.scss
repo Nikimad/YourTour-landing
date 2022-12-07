@@ -1,13 +1,10 @@
 .story {
     height: 455px;
-
     color: $white;
-
     padding: 1.875em;
 
     &__header {
         gap: 1.25em;
-
         max-width: 29em;
 
         .heading {
@@ -17,7 +14,6 @@
 
     &__list {
         list-style-type: disc;
-
         padding-left: 1.5em;
     }
 
@@ -29,13 +25,11 @@
         display: flex;
         gap: 35px;
     }
-
 }
 
 @media (min-width: $bp-medium) {
     .story {
         height: 567px;
-
         padding: 3em;
 
         &__header {
@@ -49,6 +43,5 @@
         &__list {
             margin-top: -0.5em;
         }
-    
     }
 }

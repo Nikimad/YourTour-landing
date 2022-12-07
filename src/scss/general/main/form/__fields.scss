@@ -8,18 +8,12 @@
     &__select,
     &__textarea {
         font: inherit;
-
         width: 100%;
-
         background-color: $beige-100;
-
         outline: none;
-
         border: 1px solid $beige-200;
         border-radius: 0.625rem;
-
         transition: 0.3s;
-
         padding: calc(0.625em - 1px);
         margin: 0;
 
@@ -39,7 +33,6 @@
 
     &__textarea {
         resize: none;
-
         height: 8.25em;
     }
 
@@ -61,7 +54,7 @@
         &__input,
         &__select,
         &__textarea {
-            padding: calc(1em - 1px);    
+            padding: calc(1em - 1px);
         }
 
         &__textarea {
